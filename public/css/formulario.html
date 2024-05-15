@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Inicio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="font-sans bg-gray-100">
+
+  <!-- Encabezado -->
+  <header class="bg-gray-900 text-white p-4 flex justify-between items-center">
+    <div>
+      <h1 class="text-3xl">Bienvenido a mi Sitio Web</h1>
+      <p class="text-sm">Un lugar para explorar y aprender</p>
+    </div>
+    <div></div> <!-- Espacio en blanco para la esquina opuesta -->
+    <div>
+        <a href="index.html" class="text-white hover:text-gray-300">Regresar a la página principal</a>
+      </div>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main class="container mx-auto my-8 p-4 flex justify-center">
+    <!-- Formulario de Registro -->
+    <form class="w-full max-w-lg bg-white p-6 rounded-lg">
+      <h2 class="text-2xl mb-4">Registro</h2>
+      <!-- Nombre y Apellido -->
+      <div class="flex flex-col sm:flex-row mb-4">
+        <!-- Nombre -->
+        <div class="mb-4 sm:mr-2">
+          <label for="nombre" class="block text-gray-700">Nombre</label>
+          <input type="text" id="nombre" name="nombre" class="form-input mt-1 block w-full" placeholder="Ingrese su nombre">
+        </div>
+        <!-- Apellido -->
+        <div class="mb-4 sm:ml-2">
+          <label for="apellido" class="block text-gray-700">Apellido</label>
+          <input type="text" id="apellido" name="apellido" class="form-input mt-1 block w-full" placeholder="Ingrese su apellido">
+        </div>
+      </div>
+      <!-- Correo Electrónico -->
+      <div class="mb-4">
+        <label for="correo" class="block text-gray-700">Correo Electrónico</label>
+        <input type="email" id="correo" name="correo" class="form-input mt-1 block w-full" placeholder="Ingrese su correo electrónico">
+      </div>
+      <!-- Mensaje -->
+      <div class="mb-4">
+        <label for="mensaje" class="block text-gray-700">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" class="form-textarea mt-1 block w-full" rows="4" placeholder="Ingrese su mensaje"></textarea>
+      </div>
+      <!-- Botón de Enviar -->
+      <div class="text-center">
+        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          Enviar Mensaje
+        </button>
+      </div>
+    </form>
+  </main>
+
+  <!-- Pie de Página -->
+  <footer class="bg-gray-900 text-white p-4 mt-8">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
